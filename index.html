@@ -3,45 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MedAccel Legal – Medical Records & Demand Letters for PI Firms</title>
+  <title>MedAccel Legal – Medical Records Retrieval, Accelerated</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter, 'system-ui', 'sans-serif'] },
+          colors: {
+            primary: '#0d6efd',
+            'primary-hover': '#0b5ed7',
+            secondary: '#ff8c00',
+            background: '#ffffff',
+            card: '#f8f9fa',
+            foreground: '#1a1a1a',
+            muted: '#6c757d',
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body{font-family:system-ui,-apple-system,Arial,sans-serif;margin:0;background:#f8f9fa;color:#1a1a1a;}
-    .hero{background:#0d6efd;color:white;padding:80px 20px;text-align:center;}
-    .hero h1{font-size:3rem;margin:0 0 20px;}
-    .hero p{font-size:1.3rem;max-width:800px;margin:0 auto 30px;}
-    .btn{background:white;color:#0d6efd;padding:14px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:1.1rem;}
-    .features{max-width:1000px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
-    .card{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.08);text-align:center;}
-    .card h3{font-size:1.5rem;margin:0 0 15px;}
-    footer{background:#1a1a1a;color:#aaa;padding:40px;text-align:center;font-size:0.9rem;}
-    a{color:#0d6efd;text-decoration:none;}
-    a:hover{text-decoration:underline;}
+    .bg-gradient-hero { background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); }
+    .bg-gradient-primary { background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%); }
+    .shadow-card { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }
+    .hover\:shadow-elevated:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
   </style>
 </head>
-<body>
-  <div class="hero">
-    <h1>MedAccel Legal</h1>
-    <p>The fastest way for personal-injury firms to get complete medical records and AI-powered demand letters — in hours, not weeks.</p>
-    <a href="https://app.medaccel.app" class="btn">Request Demo →</a>
-  </div>
+<body class="min-h-screen bg-background text-foreground">
 
-  <div class="features">
-    <div class="card">
-      <h3>One Code → All Records</h3>
-      <p>Client enters a single Share Everywhere code. We pull every PDF from MyChart Central (Cleveland Clinic, Mayo, UCLA, 78 % of U.S. hospitals) automatically.</p>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-hero py-24 md:py-32 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Medical Records Retrieval,<br>
+        <span class="text-secondary">Accelerated</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+        The complete platform for personal injury and mass-tort law firms to retrieve, organize, and analyze medical records with unprecedented speed and accuracy.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://app.medaccel.app" class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-lg font-semibold text-primary hover:bg-white/90 transition">
+          Request Demo
+        </a>
+        <a href="mailto:hello@medaccel.app" class="inline-flex items-center justify-center rounded-lg border-2 border-white/50 bg-white/10 px-8 py-4 text-lg font-semibold backdrop-blur hover:bg-white/20 transition">
+          Contact Sales
+        </a>
+      </div>
     </div>
-    <div class="card">
-      <h3>AI Demand Letters</h3>
-      <p>Turn 500 pages of records into a fully cited, attorney-ready demand letter with chronology, billing summary, and settlement range in minutes.</p>
-    </div>
-    <div class="card">
-      <h3>HIPAA & Court-Ready</h3>
-      <p>Encrypted, audited, certified copies. Used by top PI firms nationwide.</p>
-    </div>
-  </div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-hover/20 rounded-full blur-3xl"></div>
+  </section>
 
-  <footer>
-    <p><a href="/privacy.html">Privacy Policy</a> • MedAccel Legal © 2025 • <a href="mailto:hello@medaccel.app">hello@medaccel.app</a></p>
+  <!-- Stats -->
+  <section class="py-12 bg-card border-y">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-primary">80%</div>
+          <div class="text-sm text-muted-foreground mt-1">Faster Retrieval</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary">5,000+</div>
+          <div class="text-sm text-muted-foreground mt-1">Providers</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary">99.9%</div>
+          <div class="text-sm text-muted-foreground mt-1">Uptime</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary">24/7</div>
+          <div class="text-sm text-muted-foreground mt-1">Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 bg-background">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Everything Your Firm Needs</h2>
+        <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Built from the ground up for personal injury and mass-tort practices
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Lightning-Fast Retrieval</h3>
+          <p class="text-muted-foreground">Epic MyChart Central API + intelligent RPA = records in hours, not weeks</p>
+        </div>
+
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2a11.955 11.955 0 01-8.618 9.984M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">HIPAA Compliant</h3>
+          <p class="text-muted-foreground">End-to-end encryption, BAA-ready, SOC 2 audited</p>
+        </div>
+
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">AI-Powered Processing</h3>
+          <p class="text-muted-foreground">Auto-chronology, OCR, billing summaries, demand-letter drafts</p>
+        </div>
+
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Real-Time Tracking</h3>
+          <p class="text-muted-foreground">Live status dashboard + automated follow-ups</p>
+        </div>
+
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-4m-6 0H9"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Provider Network</h3>
+          <p class="text-muted-foreground">5,000+ hospitals & clinics (Epic, Cerner, Athena, + fax)</p>
+        </div>
+
+        <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Secure & Certified</h3>
+          <p class="text-muted-foreground">Encrypted storage, CMS integration, court-admissible PDFs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-primary text-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to 10× Your Record Speed?</h2>
+      <p class="text-lg mb-10 max-w-2xl mx-auto opacity-90">
+        Join the top PI firms already saving 20+ hours per case
+      </p>
+      <a href="https://app.medaccel.app" class="inline-flex items-center justify-center rounded-lg bg-white px-10 py-4 text-lg font-semibold text-primary hover:bg-white/90 transition">
+        Get Started Free
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-card border-t">
+    <div class="container mx-auto px-6 text-center text-sm text-muted-foreground">
+      © 2025 MedAccel Legal • <a href="/privacy.html" class="underline hover:no-underline">Privacy Policy</a> • hello@medaccel.app
+    </div>
   </footer>
 </body>
 </html>
