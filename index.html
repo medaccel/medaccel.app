@@ -28,7 +28,8 @@
     .bg-gradient-hero { background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); }
     .bg-gradient-primary { background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%); }
     .shadow-card { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }
-    .hover\\:shadow-elevated:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+    .hover\:shadow-elevated:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+    .icon { stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   </style>
 </head>
 <body class="min-h-screen bg-background text-foreground">
@@ -46,7 +47,7 @@
       </p>
       <a href="mailto:sales@medaccel.app?subject=Request%20Demo%20–%20MedAccel%20Legal&body=Hi%20team%2C%0A%0AI%27d%20like%20to%20schedule%20a%20demo%20of%20MedAccel%20Legal.%0A%0AFirm%20name%3A%0ANumber%20of%20cases%20per%20month%3A%0ABest%20phone%3A%0A%0AThanks!" 
          class="inline-flex items-center justify-center rounded-lg bg-white px-10 py-5 text-xl font-bold text-primary hover:bg-gray-100 transition shadow-lg">
-        Request Demo
+        Request Demo →
       </a>
     </div>
     <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
@@ -74,34 +75,44 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">Lightning</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">Lightning-Fast Retrieval</h3>
-          <p class="text-muted-foreground">
-            Direct patient-authorized access + intelligent automation = records in hours, not weeks
-          </p>
+          <p class="text-muted-foreground">Direct patient-authorized access + intelligent automation = records in hours, not weeks</p>
         </div>
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">Shield</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2a11.955 11.955 0 01-8.618 3.984M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">HIPAA Compliant</h3>
           <p class="text-muted-foreground">End-to-end encryption, BAA-ready, SOC 2 audited</p>
         </div>
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">AI</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">AI-Powered Processing</h3>
           <p class="text-muted-foreground">Auto-chronology, OCR, billing summaries, demand-letter drafts</p>
         </div>
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">Clock</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">Real-Time Tracking</h3>
           <p class="text-muted-foreground">Live status dashboard + automated follow-ups</p>
         </div>
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">Building</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-4m-6 0H9"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">Provider Network</h3>
           <p class="text-muted-foreground">5,000+ hospitals & clinics (Epic, Cerner, Athena, + fax)</p>
         </div>
         <div class="rounded-xl bg-card p-8 shadow-card hover:shadow-elevated transition-shadow">
-          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">Lock</div>
+          <div class="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 text-white">
+            <svg class="w-6 h-6 icon" fill="none" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
           <h3 class="text-xl font-semibold mb-3">Secure & Certified</h3>
           <p class="text-muted-foreground">Encrypted storage, CMS integration, court-admissible PDFs</p>
         </div>
@@ -126,9 +137,7 @@
   <!-- Footer -->
   <footer class="py-8 bg-card border-t">
     <div class="container mx-auto px-6 text-center text-sm text-muted-foreground">
-      © 2025 MedAccel Legal • 
-      <a href="https://medaccel.github.io/medaccel.app/privacy.html" class="underline hover:no-underline">Privacy Policy</a> • 
-      sales@medaccel.app
+      © 2025 MedAccel Legal • <a href="/privacy.html" class="underline hover:no-underline">Privacy Policy</a> • sales@medaccel.app
     </div>
   </footer>
 </body>
